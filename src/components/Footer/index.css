@@ -1,0 +1,39 @@
+/* src/components/Footer/index.css */
+.footer {
+  background-color:black;
+  text-align: center;
+  padding: 30px 20px;
+  color:white;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-img {
+  width: 40px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 20px;
+  color: white;
+}
+
+.footer-desc {
+  margin: 10px 0;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  color:white;
+}
