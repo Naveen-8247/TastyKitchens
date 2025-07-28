@@ -44,7 +44,7 @@
 }
 
 .nav-link {
-  color: black;
+  color: orange;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
@@ -54,8 +54,11 @@
 }
 
 .active-link {
-  color: orange;
+  color: black;
   font-weight: bold;
+}
+.nav-link.active-link .cart-count {
+  color: black;
 }
 
 .logout-button {
@@ -100,7 +103,6 @@
   display: none;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -144,7 +146,7 @@
   }
 
   .logout-button {
-    width: 100%;
+    width: 25%;
     font-size: 16px;
     padding: 10px 16px;
     border-radius: 6px;

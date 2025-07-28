@@ -56,7 +56,7 @@ const FoodItem = props => {
             className="add-to-cart-btn"
             onClick={onAddToCart}
           >
-            Add to Cart
+            ADD TO CART
           </button>
         )}
       </div>

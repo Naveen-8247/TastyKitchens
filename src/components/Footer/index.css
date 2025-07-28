@@ -1,9 +1,8 @@
-/* src/components/Footer/index.css */
 .footer {
-  background-color:black;
+  background-color: black;
   text-align: center;
   padding: 30px 20px;
-  color:white;
+  color: white;
 }
 
 .footer-logo {
@@ -35,5 +34,5 @@
   justify-content: center;
   gap: 20px;
   font-size: 20px;
-  color:white;
+  color: white;
 }

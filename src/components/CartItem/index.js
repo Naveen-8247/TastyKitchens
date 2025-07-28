@@ -5,16 +5,18 @@ const CartItem = ({
   item,
   incrementCartItemQuantity,
   decrementCartItemQuantity,
+  removeCartItem,
 }) => {
   const {id, name, cost, quantity, imageUrl} = item
 
   const onClickIncrement = () => incrementCartItemQuantity(id)
   const onClickDecrement = () => decrementCartItemQuantity(id)
+  const onClickRemove = () => removeCartItem(id)
 
   return (
     <li className="cart-item" data-testid="cartItem">
       <img src={imageUrl} alt={name} className="cart-item-image" />
-      <div className="cart-item-details">
+      <div className="cart-item-info">
         <h1 className="cart-item-name">{name}</h1>
         <div className="cart-quantity-controls">
           <button
@@ -37,7 +39,10 @@ const CartItem = ({
             <FaPlus size={10} />
           </button>
         </div>
-        <p className="cart-item-cost">₹ {cost * quantity}</p>
+        <p className="cart-item-cost">Price: ₹ {cost * quantity}</p>
+        <button type="button" className="remove-btn" onClick={onClickRemove}>
+          Remove
+        </button>
       </div>
     </li>
   )

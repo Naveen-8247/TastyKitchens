@@ -105,21 +105,20 @@ class Home extends Component {
 
     return (
       <>
-        <Carousel />
-        <h1 className='restaurants-heading'>Popular Restaurants</h1>
-        <div className='home-top-section'>
-          <div className='sort-container'>
-            <p className='restaurants-description'>
+        <h1 className="restaurants-heading">Popular Restaurants</h1>
+        <div className="home-top-section">
+          <div className="sort-container">
+            <p className="restaurants-description">
               Select Your favourite restaurant special dish and make your day
               happy...
             </p>
-            <div className='select-container'>
-              <p className='sort-by'>Sort By</p>
+            <div className="select-container">
+              <p className="sort-by">Sort By</p>
               <BsFilterLeft size={20} />
               <select
                 value={sortOption}
                 onChange={this.changeSortOption}
-                data-testid='sort-by-select'
+                data-testid="sort-by-select"
               >
                 {sortByOptions.map(option => (
                   <option key={option.id} value={option.value}>
@@ -130,30 +129,30 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <ul className='restaurants-list'>
+        <ul className="restaurants-list">
           {restaurantsList.map(item => (
             <RestaurantItem
               key={item.id}
               restaurant={item}
-              testid='restaurant-item'
+              testid="restaurant-item"
             />
           ))}
         </ul>
-        <div className='pagination-container'>
+        <div className="pagination-container">
           <button
-            type='button'
+            type="button"
             onClick={this.clickLeft}
-            data-testid='pagination-left-button'
-            className='pagination-button'
+            data-testid="pagination-left-button"
+            className="pagination-button"
           >
             <BsChevronLeft />
           </button>
-          <span data-testid='active-page-number'>{activePage}</span>
+          <span data-testid="active-page-number">{activePage}</span>
           <button
-            type='button'
+            type="button"
             onClick={this.clickRight}
-            data-testid='pagination-right-button'
-            className='pagination-button'
+            data-testid="pagination-right-button"
+            className="pagination-button"
           >
             <BsChevronRight />
           </button>
@@ -165,30 +164,32 @@ class Home extends Component {
   render() {
     const {isLoading, showCarouselLoader} = this.state
 
-    let content
-    if (showCarouselLoader) {
-      content = (
-        <div
-          className='loader-container'
-          data-testid='restaurants-offers-loader'
-        >
-          <Loader type='ThreeDots' color='#F7931E' height={50} width={50} />
-        </div>
-      )
-    } else if (isLoading) {
-      content = (
-        <div className='loader-container' data-testid='restaurants-list-loader'>
-          <Loader type='ThreeDots' color='#F7931E' height={50} width={50} />
-        </div>
-      )
-    } else {
-      content = this.renderRestaurantsList()
-    }
-
     return (
-      <div className='home-container'>
+      <div className="home-container">
         <Header />
-        {content}
+
+        {showCarouselLoader ? (
+          <div
+            className="loader-container"
+            data-testid="restaurants-offers-loader"
+          >
+            <Loader type="ThreeDots" color="#F7931E" height={50} width={50} />
+          </div>
+        ) : (
+          <Carousel />
+        )}
+
+        {isLoading ? (
+          <div
+            className="loader-container"
+            data-testid="restaurants-list-loader"
+          >
+            <Loader type="ThreeDots" color="#F7931E" height={50} width={50} />
+          </div>
+        ) : (
+          this.renderRestaurantsList()
+        )}
+
         <Footer />
       </div>
     )
