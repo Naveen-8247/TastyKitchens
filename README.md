@@ -13,9 +13,31 @@ The platform features **responsive layouts, smooth UX, and modern UI design** us
 - **Other Tools:** React Slick, Local Storage, REST API (mock/fetch), Figma  
 
 ## 📸 Screenshots
-![Tasty Kitchens Home](https://via.placeholder.com/300x150)  
-![Tasty Kitchens Restaurant Details](https://via.placeholder.com/300x150)  
-![Tasty Kitchens Cart](https://via.placeholder.com/300x150)  
+
+### 🔐 Login Page
+![Login Page](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719148/Screenshot_2025-10-17_220333_wwj1zi.png)
+
+### 🏠 Home Page (with Carousel & Restaurants)
+![Home Page](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719158/Screenshot_2025-10-17_220408_jol9fd.png)
+
+### 🍴 Restaurant Details Page
+![Restaurant Details](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719166/Screenshot_2025-10-17_220446_wtyj99.png)
+
+### 🛒 Cart Page
+![Cart Page](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719175/Screenshot_2025-10-17_220558_hlq1c5.png)
+
+### 💳 Payment Successful View
+![Payment Successful](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719184/Screenshot_2025-10-17_220616_trsdfn.png)
+
+### 📊 Sorting & Filtering (Based on Restaurant Ratings)
+![Sorting & Filtering](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719209/Screenshot_2025-10-17_220854_okb5ev.png)
+
+### 🚫 Empty Cart View
+![Empty Cart View](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719396/Screenshot_2025-10-17_221247_efgum2.png)
+
+### ⚙️ Footer Section
+![Footer](https://res.cloudinary.com/dcy78sibl/image/upload/v1760719193/Screenshot_2025-10-17_220628_y2c4nj.png)
+
 
 ## 👤 Demo Credentials
 - **Username:** rahul  
